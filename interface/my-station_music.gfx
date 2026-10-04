@@ -1,0 +1,13 @@
+spriteTypes = {
+    # Спрайт для обложки станции в списке
+    spriteType = {
+        name = "GFX_zov_love_radio_album_art"
+        texturefile = "gfx/interface/topbar/musicplayer/zov_love_radio_album_art.dds" # Путь к вашей обложке
+        noOfFrames = 2 # Обычно 2 кадра: обычное состояние и при наведении/выборе
+    }
+    # Спрайт для панели (faceplate)
+    spriteType = {
+        name = "GFX_zov_love_radio_faceplate"
+        texturefile = "gfx/interface/topbar/musicplayer/zov_love_radio_faceplate.dds" # Путь к вашей панели
+    }
+}

@@ -1,0 +1,109 @@
+guiTypes = {
+    containerWindowType = {
+        name = "zov_love_radio"
+        position = { x = 0 y = 0 }
+        size = { width = 590 height = 46 }
+        
+        # Фон панели
+        iconType = {
+            name = "zov_love_radio_faceplate_bg"
+            spriteType = "GFX_zov_love_radio_faceplate"
+            position = { x = 0 y = 0 }
+            allwaystransparent = yes
+        }
+        
+        # Название трека
+        instantTextboxType = {
+            name = "track_name"
+            position = { x = 72 y = 20 }
+            font = "hoi_20b"
+            text = "ZOV.love"
+            maxWidth = 450
+            maxHeight = 25
+            format = center
+        }
+        
+        # Кнопка "Предыдущий трек"
+        buttonType = {
+            name = "prev_button"
+            position = { x = 220 y = 20 }
+            quadTextureSprite = "GFX_musicplayer_previous_button"
+            buttonFont = "Main_14_black"
+            Orientation = "LOWER_LEFT"
+            clicksound = click_close
+            pdx_tooltip = "MUSICPLAYER_PREV"
+        }
+        
+        # Кнопка "Плей/Пауза"
+        buttonType = {
+            name = "play_button"
+            position = { x = 263 y = 20 }
+            quadTextureSprite = "GFX_musicplayer_play_pause_button"
+            buttonFont = "Main_14_black"
+            Orientation = "LOWER_LEFT"
+            clicksound = click_close
+        }
+        
+        # Кнопка "Следующий трек"
+        buttonType = {
+            name = "next_button"
+            position = { x = 336 y = 20 }
+            quadTextureSprite = "GFX_musicplayer_next_button"
+            buttonFont = "Main_14_black"
+            Orientation = "LOWER_LEFT"
+            clicksound = click_close
+            pdx_tooltip = "MUSICPLAYER_NEXT"
+        }
+        
+        # Слайдер громкости
+        extendedScrollbarType = {
+            name = "volume_slider"
+            position = { x = 100 y = 45 }
+            size = { width = 75 height = 18 }
+            tileSize = { width = 12 height = 12 }
+            maxValue = 100
+            minValue = 0
+            stepSize = 1
+            startValue = 50
+            horizontal = yes
+            orientation = lower_left
+            origo = lower_left
+            setTrackFrameOnChange = yes
+            slider = {
+                name = "Slider"
+                quadTextureSprite = "GFX_scroll_drager"
+                position = { x = 0 y = 1 }
+                pdx_tooltip = "MUSICPLAYER_ADJUST_VOL"
+            }
+            track = {
+                name = "Track"
+                quadTextureSprite = "GFX_volume_track"
+                position = { x = 0 y = 3 }
+                alwaystransparent = yes
+                pdx_tooltip = "MUSICPLAYER_ADJUST_VOL"
+            }
+        }
+        
+        # Кнопка "Перемешать"
+        buttonType = {
+            name = "shuffle_button"
+            position = { x = 425 y = 20 }
+            quadTextureSprite = "GFX_toggle_shuffle_buttons"
+            buttonFont = "Main_14_black"
+            Orientation = "LOWER_LEFT"
+            clicksound = click_close
+        }
+    }
+    
+    # Контейнер для кнопки-обложки в списке радиостанций
+    containerWindowType = {
+        name = "zov_love_radio_stations_entry"
+        size = { width = 162 height = 130 }
+        checkBoxType = {
+            name = "select_station_button"
+            position = { x = 0 y = 0 }
+            quadTextureSprite = "GFX_zov_love_radio_album_art"
+            clicksound = decisions_ui_button
+        }
+    }
+}
